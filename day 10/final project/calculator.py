@@ -31,14 +31,9 @@ def calculator(num1,num2,symbol):
 def take_input(num1='empty'):
 	if(num1=='empty'):
 		num1 = float(input("What's the first number?: "))
+	else:
 		for symbol in operations:
 			print(symbol)
-		symbol = input("Pick an operation: ")
-		num2 = float(input("Enter the second number: "))
-		result = calculator(num1,num2,symbol)
-		print(f"{num1} {symbol} {num2} = {result}")
-	else:
-		print("+\n-\n*\n/")
 		symbol = input("Pick an operation: ")
 		num2 = float(input("Enter the second number: "))
 		result = calculator(num1,num2,symbol)
